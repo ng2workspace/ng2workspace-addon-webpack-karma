@@ -1,0 +1,43 @@
+{
+  "name": "ng2workspace-addon-webpack-karma",
+  "version": "0.0.1",
+  "description": "Karma for ng2workspace-addon-webpack",
+  "main": "index.js",
+  "homepage": "https://github.com/ng2workspace/ng2workspace-addon-webpack-karma#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ng2workspace/ng2workspace-addon-webpack-karma.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ng2workspace/ng2workspace-addon-webpack-karma/issues"
+  },
+  "keywords": [
+    "ng2workspace",
+    "angular2",
+    "ng2workspace-addon",
+    "webpack",
+    "karma"
+  ],
+  "author": "Merott Movahedi <merott@merott.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "ng2workspace": "^0.0.3",
+    "ng2workspace-addon-webpack": "^0.0.2"
+  },
+  "dependencies": {
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.21",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-jasmine": "^0.3.7",
+    "karma-mocha-reporter": "^1.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "lodash.clonedeep": "^4.3.0",
+    "phantomjs-polyfill": "^0.0.2",
+    "phantomjs-prebuilt": "^2.1.4"
+  },
+  "devDependencies": {}
+}
