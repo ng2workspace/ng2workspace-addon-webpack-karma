@@ -21,8 +21,8 @@
   "author": "Merott Movahedi <merott@merott.com>",
   "license": "MIT",
   "peerDependencies": {
-    "ng2workspace": "^0.0.3",
-    "ng2workspace-addon-webpack": "^0.0.2"
+    "ng2workspace": "*",
+    "ng2workspace-addon-webpack": "*"
   },
   "dependencies": {
     "istanbul-instrumenter-loader": "^0.2.0",
