@@ -50,5 +50,19 @@ function adjustWebpackConfig(config, ng2workspace) {
     ]
   });
 
+  // drop any sort of *promise-loader* during testing
+  config.module.loaders.forEach(function(loaderObj) {
+    loaderObj.loaders = (loaderObj.loaders || [loaderObj.loader])
+        .reduce(function(memo, loader) {
+          return memo.concat(loader.split('!'));
+        }, []);
+
+    loaderObj.loaders = loaderObj.loaders.filter(function(loader) {
+      return !!loader && loader.indexOf('promise-loader') === -1;
+    });
+
+    delete loaderObj.loader;
+  });
+
   config.stats = { colors: true, reasons: true };
 }
